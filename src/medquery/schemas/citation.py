@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-
 @dataclass
 class CitationValidationResult:
     valid: bool

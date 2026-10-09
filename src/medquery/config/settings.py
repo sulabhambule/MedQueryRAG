@@ -9,7 +9,6 @@ class Settings(BaseSettings):
         "sentence-transformers/all-MiniLM-L6-v2"
     )
 
-
     reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2" 
 
     qdrant_url: str = "http://localhost:6333"
@@ -19,7 +18,6 @@ class Settings(BaseSettings):
 
     groq_api_key: str | None = None
     groq_model: str = "openai/gpt-oss-20b"
-
 
     model_config = SettingsConfigDict(
         env_file=".env",
